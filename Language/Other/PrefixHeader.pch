@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  Language
+//
+//  Created by 石燚 on 16/5/30.
+//  Copyright © 2016年 石燚. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define kSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define kSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+
+#endif /* PrefixHeader_pch */

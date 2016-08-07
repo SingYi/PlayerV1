@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E9F462D1D56FAD50097D794 /* Sound 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46051D56FAD50097D794 /* Sound 1.mp3 */; };
+		5E9F462E1D56FAD50097D794 /* Sound 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46061D56FAD50097D794 /* Sound 10.mp3 */; };
+		5E9F462F1D56FAD50097D794 /* Sound 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46071D56FAD50097D794 /* Sound 11.mp3 */; };
+		5E9F46301D56FAD50097D794 /* Sound 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46081D56FAD50097D794 /* Sound 12.mp3 */; };
+		5E9F46311D56FAD50097D794 /* Sound 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46091D56FAD50097D794 /* Sound 13.mp3 */; };
+		5E9F46321D56FAD50097D794 /* Sound 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F460A1D56FAD50097D794 /* Sound 14.mp3 */; };
+		5E9F46331D56FAD50097D794 /* Sound 15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F460B1D56FAD50097D794 /* Sound 15.mp3 */; };
+		5E9F46341D56FAD50097D794 /* Sound 16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F460C1D56FAD50097D794 /* Sound 16.mp3 */; };
+		5E9F46351D56FAD50097D794 /* Sound 17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F460D1D56FAD50097D794 /* Sound 17.mp3 */; };
+		5E9F46361D56FAD50097D794 /* Sound 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F460E1D56FAD50097D794 /* Sound 18.mp3 */; };
+		5E9F46371D56FAD50097D794 /* Sound 19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F460F1D56FAD50097D794 /* Sound 19.mp3 */; };
+		5E9F46381D56FAD50097D794 /* Sound 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46101D56FAD50097D794 /* Sound 2.mp3 */; };
+		5E9F46391D56FAD50097D794 /* Sound 20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46111D56FAD50097D794 /* Sound 20.mp3 */; };
+		5E9F463A1D56FAD50097D794 /* Sound 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46121D56FAD50097D794 /* Sound 21.mp3 */; };
+		5E9F463B1D56FAD50097D794 /* Sound 22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46131D56FAD50097D794 /* Sound 22.mp3 */; };
+		5E9F463C1D56FAD50097D794 /* Sound 23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46141D56FAD50097D794 /* Sound 23.mp3 */; };
+		5E9F463D1D56FAD50097D794 /* Sound 24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46151D56FAD50097D794 /* Sound 24.mp3 */; };
+		5E9F463E1D56FAD50097D794 /* Sound 25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46161D56FAD50097D794 /* Sound 25.mp3 */; };
+		5E9F463F1D56FAD50097D794 /* Sound 26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46171D56FAD50097D794 /* Sound 26.mp3 */; };
+		5E9F46401D56FAD50097D794 /* Sound 27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46181D56FAD50097D794 /* Sound 27.mp3 */; };
+		5E9F46411D56FAD50097D794 /* Sound 28.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46191D56FAD50097D794 /* Sound 28.mp3 */; };
+		5E9F46421D56FAD50097D794 /* Sound 29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F461A1D56FAD50097D794 /* Sound 29.mp3 */; };
+		5E9F46431D56FAD50097D794 /* Sound 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F461B1D56FAD50097D794 /* Sound 3.mp3 */; };
+		5E9F46441D56FAD50097D794 /* Sound 30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F461C1D56FAD50097D794 /* Sound 30.mp3 */; };
+		5E9F46451D56FAD50097D794 /* Sound 31.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F461D1D56FAD50097D794 /* Sound 31.mp3 */; };
+		5E9F46461D56FAD50097D794 /* Sound 32.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F461E1D56FAD50097D794 /* Sound 32.mp3 */; };
+		5E9F46471D56FAD50097D794 /* Sound 33.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F461F1D56FAD50097D794 /* Sound 33.mp3 */; };
+		5E9F46481D56FAD50097D794 /* Sound 34.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46201D56FAD50097D794 /* Sound 34.mp3 */; };
+		5E9F46491D56FAD50097D794 /* Sound 35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46211D56FAD50097D794 /* Sound 35.mp3 */; };
+		5E9F464A1D56FAD50097D794 /* Sound 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46221D56FAD50097D794 /* Sound 36.mp3 */; };
+		5E9F464B1D56FAD50097D794 /* Sound 37.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46231D56FAD50097D794 /* Sound 37.mp3 */; };
+		5E9F464C1D56FAD50097D794 /* Sound 38.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46241D56FAD50097D794 /* Sound 38.mp3 */; };
+		5E9F464D1D56FAD50097D794 /* Sound 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46251D56FAD50097D794 /* Sound 4.mp3 */; };
+		5E9F464E1D56FAD50097D794 /* Sound 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46261D56FAD50097D794 /* Sound 5.mp3 */; };
+		5E9F464F1D56FAD50097D794 /* Sound 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46271D56FAD50097D794 /* Sound 6.mp3 */; };
+		5E9F46501D56FAD50097D794 /* Sound 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46281D56FAD50097D794 /* Sound 7.mp3 */; };
+		5E9F46511D56FAD50097D794 /* Sound 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46291D56FAD50097D794 /* Sound 8.mp3 */; };
+		5E9F46521D56FAD50097D794 /* Sound 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F462A1D56FAD50097D794 /* Sound 9.mp3 */; };
+		5E9F46531D56FAD50097D794 /* 分句原文.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F462B1D56FAD50097D794 /* 分句原文.txt */; };
+		5E9F46541D56FAD50097D794 /* 原始音频.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F462C1D56FAD50097D794 /* 原始音频.mp3 */; };
+		5EAA03A51D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA03A21D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 */; };
+		5EAA03A61D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA03A31D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 */; };
+		5EAA03A71D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA03A41D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 */; };
+		5EEBDE681CFBCE74002BA4FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBDE671CFBCE74002BA4FB /* main.m */; };
+		5EEBDE6B1CFBCE74002BA4FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBDE6A1CFBCE74002BA4FB /* AppDelegate.m */; };
+		5EEBDE6E1CFBCE74002BA4FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBDE6D1CFBCE74002BA4FB /* ViewController.m */; };
+		5EEBDE731CFBCE74002BA4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEBDE721CFBCE74002BA4FB /* Assets.xcassets */; };
+		5EEBDE761CFBCE74002BA4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEBDE741CFBCE74002BA4FB /* LaunchScreen.storyboard */; };
+		5EFD404C1CFBE02E002387A6 /* MineClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD404B1CFBE02E002387A6 /* MineClassViewController.m */; };
+		5EFD40501CFBECE2002387A6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EFD404F1CFBECE2002387A6 /* 1.jpg */; };
+		5EFD40531CFC1C9D002387A6 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD40521CFC1C9D002387A6 /* PlayViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E9F46051D56FAD50097D794 /* Sound 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 1.mp3"; sourceTree = "<group>"; };
+		5E9F46061D56FAD50097D794 /* Sound 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 10.mp3"; sourceTree = "<group>"; };
+		5E9F46071D56FAD50097D794 /* Sound 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 11.mp3"; sourceTree = "<group>"; };
+		5E9F46081D56FAD50097D794 /* Sound 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 12.mp3"; sourceTree = "<group>"; };
+		5E9F46091D56FAD50097D794 /* Sound 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 13.mp3"; sourceTree = "<group>"; };
+		5E9F460A1D56FAD50097D794 /* Sound 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 14.mp3"; sourceTree = "<group>"; };
+		5E9F460B1D56FAD50097D794 /* Sound 15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 15.mp3"; sourceTree = "<group>"; };
+		5E9F460C1D56FAD50097D794 /* Sound 16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 16.mp3"; sourceTree = "<group>"; };
+		5E9F460D1D56FAD50097D794 /* Sound 17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 17.mp3"; sourceTree = "<group>"; };
+		5E9F460E1D56FAD50097D794 /* Sound 18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 18.mp3"; sourceTree = "<group>"; };
+		5E9F460F1D56FAD50097D794 /* Sound 19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 19.mp3"; sourceTree = "<group>"; };
+		5E9F46101D56FAD50097D794 /* Sound 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 2.mp3"; sourceTree = "<group>"; };
+		5E9F46111D56FAD50097D794 /* Sound 20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 20.mp3"; sourceTree = "<group>"; };
+		5E9F46121D56FAD50097D794 /* Sound 21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 21.mp3"; sourceTree = "<group>"; };
+		5E9F46131D56FAD50097D794 /* Sound 22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 22.mp3"; sourceTree = "<group>"; };
+		5E9F46141D56FAD50097D794 /* Sound 23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 23.mp3"; sourceTree = "<group>"; };
+		5E9F46151D56FAD50097D794 /* Sound 24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 24.mp3"; sourceTree = "<group>"; };
+		5E9F46161D56FAD50097D794 /* Sound 25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 25.mp3"; sourceTree = "<group>"; };
+		5E9F46171D56FAD50097D794 /* Sound 26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 26.mp3"; sourceTree = "<group>"; };
+		5E9F46181D56FAD50097D794 /* Sound 27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 27.mp3"; sourceTree = "<group>"; };
+		5E9F46191D56FAD50097D794 /* Sound 28.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 28.mp3"; sourceTree = "<group>"; };
+		5E9F461A1D56FAD50097D794 /* Sound 29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 29.mp3"; sourceTree = "<group>"; };
+		5E9F461B1D56FAD50097D794 /* Sound 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 3.mp3"; sourceTree = "<group>"; };
+		5E9F461C1D56FAD50097D794 /* Sound 30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 30.mp3"; sourceTree = "<group>"; };
+		5E9F461D1D56FAD50097D794 /* Sound 31.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 31.mp3"; sourceTree = "<group>"; };
+		5E9F461E1D56FAD50097D794 /* Sound 32.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 32.mp3"; sourceTree = "<group>"; };
+		5E9F461F1D56FAD50097D794 /* Sound 33.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 33.mp3"; sourceTree = "<group>"; };
+		5E9F46201D56FAD50097D794 /* Sound 34.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 34.mp3"; sourceTree = "<group>"; };
+		5E9F46211D56FAD50097D794 /* Sound 35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 35.mp3"; sourceTree = "<group>"; };
+		5E9F46221D56FAD50097D794 /* Sound 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 36.mp3"; sourceTree = "<group>"; };
+		5E9F46231D56FAD50097D794 /* Sound 37.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 37.mp3"; sourceTree = "<group>"; };
+		5E9F46241D56FAD50097D794 /* Sound 38.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 38.mp3"; sourceTree = "<group>"; };
+		5E9F46251D56FAD50097D794 /* Sound 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 4.mp3"; sourceTree = "<group>"; };
+		5E9F46261D56FAD50097D794 /* Sound 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 5.mp3"; sourceTree = "<group>"; };
+		5E9F46271D56FAD50097D794 /* Sound 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 6.mp3"; sourceTree = "<group>"; };
+		5E9F46281D56FAD50097D794 /* Sound 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 7.mp3"; sourceTree = "<group>"; };
+		5E9F46291D56FAD50097D794 /* Sound 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 8.mp3"; sourceTree = "<group>"; };
+		5E9F462A1D56FAD50097D794 /* Sound 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 9.mp3"; sourceTree = "<group>"; };
+		5E9F462B1D56FAD50097D794 /* 分句原文.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "分句原文.txt"; sourceTree = "<group>"; };
+		5E9F462C1D56FAD50097D794 /* 原始音频.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "原始音频.mp3"; sourceTree = "<group>"; };
+		5EAA03A21D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3"; sourceTree = "<group>"; };
+		5EAA03A31D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3"; sourceTree = "<group>"; };
+		5EAA03A41D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Technologie auf dem Campus - Studierendenausweis war gestern.mp3"; sourceTree = "<group>"; };
+		5EEBDE631CFBCE74002BA4FB /* Language.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Language.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEBDE671CFBCE74002BA4FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EEBDE691CFBCE74002BA4FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5EEBDE6A1CFBCE74002BA4FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5EEBDE6C1CFBCE74002BA4FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		5EEBDE6D1CFBCE74002BA4FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
+		5EEBDE721CFBCE74002BA4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EEBDE751CFBCE74002BA4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EEBDE771CFBCE74002BA4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EFD404A1CFBE02E002387A6 /* MineClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineClassViewController.h; sourceTree = "<group>"; };
+		5EFD404B1CFBE02E002387A6 /* MineClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineClassViewController.m; sourceTree = "<group>"; };
+		5EFD404D1CFBE136002387A6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5EFD404F1CFBECE2002387A6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		5EFD40511CFC1C9D002387A6 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		5EFD40521CFC1C9D002387A6 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EEBDE601CFBCE74002BA4FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E9F46041D56FAD50097D794 /* 分句音频 */ = {
+			isa = PBXGroup;
+			children = (
+				5E9F46051D56FAD50097D794 /* Sound 1.mp3 */,
+				5E9F46061D56FAD50097D794 /* Sound 10.mp3 */,
+				5E9F46071D56FAD50097D794 /* Sound 11.mp3 */,
+				5E9F46081D56FAD50097D794 /* Sound 12.mp3 */,
+				5E9F46091D56FAD50097D794 /* Sound 13.mp3 */,
+				5E9F460A1D56FAD50097D794 /* Sound 14.mp3 */,
+				5E9F460B1D56FAD50097D794 /* Sound 15.mp3 */,
+				5E9F460C1D56FAD50097D794 /* Sound 16.mp3 */,
+				5E9F460D1D56FAD50097D794 /* Sound 17.mp3 */,
+				5E9F460E1D56FAD50097D794 /* Sound 18.mp3 */,
+				5E9F460F1D56FAD50097D794 /* Sound 19.mp3 */,
+				5E9F46101D56FAD50097D794 /* Sound 2.mp3 */,
+				5E9F46111D56FAD50097D794 /* Sound 20.mp3 */,
+				5E9F46121D56FAD50097D794 /* Sound 21.mp3 */,
+				5E9F46131D56FAD50097D794 /* Sound 22.mp3 */,
+				5E9F46141D56FAD50097D794 /* Sound 23.mp3 */,
+				5E9F46151D56FAD50097D794 /* Sound 24.mp3 */,
+				5E9F46161D56FAD50097D794 /* Sound 25.mp3 */,
+				5E9F46171D56FAD50097D794 /* Sound 26.mp3 */,
+				5E9F46181D56FAD50097D794 /* Sound 27.mp3 */,
+				5E9F46191D56FAD50097D794 /* Sound 28.mp3 */,
+				5E9F461A1D56FAD50097D794 /* Sound 29.mp3 */,
+				5E9F461B1D56FAD50097D794 /* Sound 3.mp3 */,
+				5E9F461C1D56FAD50097D794 /* Sound 30.mp3 */,
+				5E9F461D1D56FAD50097D794 /* Sound 31.mp3 */,
+				5E9F461E1D56FAD50097D794 /* Sound 32.mp3 */,
+				5E9F461F1D56FAD50097D794 /* Sound 33.mp3 */,
+				5E9F46201D56FAD50097D794 /* Sound 34.mp3 */,
+				5E9F46211D56FAD50097D794 /* Sound 35.mp3 */,
+				5E9F46221D56FAD50097D794 /* Sound 36.mp3 */,
+				5E9F46231D56FAD50097D794 /* Sound 37.mp3 */,
+				5E9F46241D56FAD50097D794 /* Sound 38.mp3 */,
+				5E9F46251D56FAD50097D794 /* Sound 4.mp3 */,
+				5E9F46261D56FAD50097D794 /* Sound 5.mp3 */,
+				5E9F46271D56FAD50097D794 /* Sound 6.mp3 */,
+				5E9F46281D56FAD50097D794 /* Sound 7.mp3 */,
+				5E9F46291D56FAD50097D794 /* Sound 8.mp3 */,
+				5E9F462A1D56FAD50097D794 /* Sound 9.mp3 */,
+			);
+			path = "分句音频";
+			sourceTree = "<group>";
+		};
+		5EAA03A11D339564009F38BF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5E9F46041D56FAD50097D794 /* 分句音频 */,
+				5E9F462B1D56FAD50097D794 /* 分句原文.txt */,
+				5E9F462C1D56FAD50097D794 /* 原始音频.mp3 */,
+				5EAA03A21D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 */,
+				5EAA03A31D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 */,
+				5EAA03A41D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5EEBDE5A1CFBCE74002BA4FB = {
+			isa = PBXGroup;
+			children = (
+				5EEBDE651CFBCE74002BA4FB /* Language */,
+				5EEBDE641CFBCE74002BA4FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EEBDE641CFBCE74002BA4FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBDE631CFBCE74002BA4FB /* Language.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EEBDE651CFBCE74002BA4FB /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBDE691CFBCE74002BA4FB /* AppDelegate.h */,
+				5EEBDE6A1CFBCE74002BA4FB /* AppDelegate.m */,
+				5EEBDE7D1CFBD592002BA4FB /* ChildClass */,
+				5EEBDE811CFBD592002BA4FB /* Other */,
+				5EAA03A11D339564009F38BF /* Resource */,
+				5EFD404E1CFBECB4002387A6 /* Material */,
+				5EEBDE821CFBD592002BA4FB /* Third */,
+				5EEBDE661CFBCE74002BA4FB /* Supporting Files */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		5EEBDE661CFBCE74002BA4FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBDE741CFBCE74002BA4FB /* LaunchScreen.storyboard */,
+				5EEBDE721CFBCE74002BA4FB /* Assets.xcassets */,
+				5EEBDE771CFBCE74002BA4FB /* Info.plist */,
+				5EEBDE671CFBCE74002BA4FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EEBDE7D1CFBD592002BA4FB /* ChildClass */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBDE7F1CFBD592002BA4FB /* Model */,
+				5EEBDE801CFBD592002BA4FB /* View */,
+				5EEBDE7E1CFBD592002BA4FB /* Controller */,
+			);
+			name = ChildClass;
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5EEBDE7E1CFBD592002BA4FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBDE6C1CFBCE74002BA4FB /* ViewController.h */,
+				5EEBDE6D1CFBCE74002BA4FB /* ViewController.m */,
+				5EFD404A1CFBE02E002387A6 /* MineClassViewController.h */,
+				5EFD404B1CFBE02E002387A6 /* MineClassViewController.m */,
+				5EFD40511CFC1C9D002387A6 /* PlayViewController.h */,
+				5EFD40521CFC1C9D002387A6 /* PlayViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5EEBDE7F1CFBD592002BA4FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EEBDE801CFBD592002BA4FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EEBDE811CFBD592002BA4FB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD404D1CFBE136002387A6 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5EEBDE821CFBD592002BA4FB /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		5EFD404E1CFBECB4002387A6 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD404F1CFBECE2002387A6 /* 1.jpg */,
+			);
+			path = Material;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EEBDE621CFBCE74002BA4FB /* Language */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EEBDE7A1CFBCE74002BA4FB /* Build configuration list for PBXNativeTarget "Language" */;
+			buildPhases = (
+				5EEBDE5F1CFBCE74002BA4FB /* Sources */,
+				5EEBDE601CFBCE74002BA4FB /* Frameworks */,
+				5EEBDE611CFBCE74002BA4FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Language;
+			productName = Language;
+			productReference = 5EEBDE631CFBCE74002BA4FB /* Language.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EEBDE5B1CFBCE74002BA4FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "石燚";
+				TargetAttributes = {
+					5EEBDE621CFBCE74002BA4FB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5EEBDE5E1CFBCE74002BA4FB /* Build configuration list for PBXProject "Language" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EEBDE5A1CFBCE74002BA4FB;
+			productRefGroup = 5EEBDE641CFBCE74002BA4FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EEBDE621CFBCE74002BA4FB /* Language */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EEBDE611CFBCE74002BA4FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9F463C1D56FAD50097D794 /* Sound 23.mp3 in Resources */,
+				5E9F46501D56FAD50097D794 /* Sound 7.mp3 in Resources */,
+				5EFD40501CFBECE2002387A6 /* 1.jpg in Resources */,
+				5E9F46521D56FAD50097D794 /* Sound 9.mp3 in Resources */,
+				5E9F463B1D56FAD50097D794 /* Sound 22.mp3 in Resources */,
+				5E9F46391D56FAD50097D794 /* Sound 20.mp3 in Resources */,
+				5E9F46351D56FAD50097D794 /* Sound 17.mp3 in Resources */,
+				5EAA03A61D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 in Resources */,
+				5E9F46401D56FAD50097D794 /* Sound 27.mp3 in Resources */,
+				5E9F46411D56FAD50097D794 /* Sound 28.mp3 in Resources */,
+				5E9F463D1D56FAD50097D794 /* Sound 24.mp3 in Resources */,
+				5EEBDE761CFBCE74002BA4FB /* LaunchScreen.storyboard in Resources */,
+				5EEBDE731CFBCE74002BA4FB /* Assets.xcassets in Resources */,
+				5E9F46491D56FAD50097D794 /* Sound 35.mp3 in Resources */,
+				5E9F463A1D56FAD50097D794 /* Sound 21.mp3 in Resources */,
+				5E9F463E1D56FAD50097D794 /* Sound 25.mp3 in Resources */,
+				5E9F46471D56FAD50097D794 /* Sound 33.mp3 in Resources */,
+				5E9F46321D56FAD50097D794 /* Sound 14.mp3 in Resources */,
+				5E9F464A1D56FAD50097D794 /* Sound 36.mp3 in Resources */,
+				5E9F462E1D56FAD50097D794 /* Sound 10.mp3 in Resources */,
+				5E9F462D1D56FAD50097D794 /* Sound 1.mp3 in Resources */,
+				5E9F46441D56FAD50097D794 /* Sound 30.mp3 in Resources */,
+				5E9F464C1D56FAD50097D794 /* Sound 38.mp3 in Resources */,
+				5E9F46331D56FAD50097D794 /* Sound 15.mp3 in Resources */,
+				5E9F46301D56FAD50097D794 /* Sound 12.mp3 in Resources */,
+				5E9F464E1D56FAD50097D794 /* Sound 5.mp3 in Resources */,
+				5E9F46381D56FAD50097D794 /* Sound 2.mp3 in Resources */,
+				5EAA03A71D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 in Resources */,
+				5E9F46371D56FAD50097D794 /* Sound 19.mp3 in Resources */,
+				5E9F462F1D56FAD50097D794 /* Sound 11.mp3 in Resources */,
+				5E9F46421D56FAD50097D794 /* Sound 29.mp3 in Resources */,
+				5E9F46531D56FAD50097D794 /* 分句原文.txt in Resources */,
+				5E9F46461D56FAD50097D794 /* Sound 32.mp3 in Resources */,
+				5E9F46361D56FAD50097D794 /* Sound 18.mp3 in Resources */,
+				5E9F463F1D56FAD50097D794 /* Sound 26.mp3 in Resources */,
+				5E9F46481D56FAD50097D794 /* Sound 34.mp3 in Resources */,
+				5E9F464B1D56FAD50097D794 /* Sound 37.mp3 in Resources */,
+				5E9F46451D56FAD50097D794 /* Sound 31.mp3 in Resources */,
+				5E9F46511D56FAD50097D794 /* Sound 8.mp3 in Resources */,
+				5E9F46311D56FAD50097D794 /* Sound 13.mp3 in Resources */,
+				5E9F46341D56FAD50097D794 /* Sound 16.mp3 in Resources */,
+				5EAA03A51D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 in Resources */,
+				5E9F46541D56FAD50097D794 /* 原始音频.mp3 in Resources */,
+				5E9F464D1D56FAD50097D794 /* Sound 4.mp3 in Resources */,
+				5E9F464F1D56FAD50097D794 /* Sound 6.mp3 in Resources */,
+				5E9F46431D56FAD50097D794 /* Sound 3.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EEBDE5F1CFBCE74002BA4FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EEBDE6E1CFBCE74002BA4FB /* ViewController.m in Sources */,
+				5EEBDE6B1CFBCE74002BA4FB /* AppDelegate.m in Sources */,
+				5EFD404C1CFBE02E002387A6 /* MineClassViewController.m in Sources */,
+				5EFD40531CFC1C9D002387A6 /* PlayViewController.m in Sources */,
+				5EEBDE681CFBCE74002BA4FB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5EEBDE741CFBCE74002BA4FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EEBDE751CFBCE74002BA4FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EEBDE781CFBCE74002BA4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EEBDE791CFBCE74002BA4FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EEBDE7B1CFBCE74002BA4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Language/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = Language/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sy.Language;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5EEBDE7C1CFBCE74002BA4FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Language/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = Language/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sy.Language;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EEBDE5E1CFBCE74002BA4FB /* Build configuration list for PBXProject "Language" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EEBDE781CFBCE74002BA4FB /* Debug */,
+				5EEBDE791CFBCE74002BA4FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EEBDE7A1CFBCE74002BA4FB /* Build configuration list for PBXNativeTarget "Language" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EEBDE7B1CFBCE74002BA4FB /* Debug */,
+				5EEBDE7C1CFBCE74002BA4FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EEBDE5B1CFBCE74002BA4FB /* Project object */;
+}
