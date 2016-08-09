@@ -131,7 +131,7 @@
 }
 
 - (void)clickLast {
-    if (_currentMusicIdx == 0) {
+    if (_currentMusicIdx == 1) {
         _currentMusicIdx = 38;
     } else {
         _currentMusicIdx--;
@@ -231,7 +231,7 @@
 - (UIButton *)next {
     if (!_next) {
         _next = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        _next.frame = CGRectMake(0, kSCREEN_HEIGHT * 0.8, kSCREEN_WIDTH / 2, kSCREEN_HEIGHT / 10);
+        _next.frame = CGRectMake(kSCREEN_WIDTH / 2, kSCREEN_HEIGHT * 0.8, kSCREEN_WIDTH / 2, kSCREEN_HEIGHT / 10);
         [_next setTitle:@"下一句" forState:(UIControlStateNormal)];
         _next.backgroundColor = [UIColor orangeColor];
         [_next addTarget:self action:@selector(clickNext) forControlEvents:(UIControlEventTouchUpInside)];
@@ -242,7 +242,7 @@
 - (UIButton *)last {
     if (!_last) {
         _last = [UIButton buttonWithType:(UIButtonTypeCustom)];
-        _last.frame = CGRectMake(kSCREEN_WIDTH / 2, kSCREEN_HEIGHT * 0.8, kSCREEN_WIDTH / 2, kSCREEN_HEIGHT / 10);
+        _last.frame = CGRectMake(0, kSCREEN_HEIGHT * 0.8, kSCREEN_WIDTH / 2, kSCREEN_HEIGHT / 10);
         [_last setTitle:@"上一句" forState:(UIControlStateNormal)];
         _last.backgroundColor = [UIColor orangeColor];
         [_last addTarget:self action:@selector(clickLast) forControlEvents:(UIControlEventTouchUpInside)];

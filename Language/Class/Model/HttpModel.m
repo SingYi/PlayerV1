@@ -112,7 +112,7 @@
         }
         
         id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-        NSLog(@"%@",obj);
+//        NSLog(@"%@",obj);
     }];
     
     [tast resume];

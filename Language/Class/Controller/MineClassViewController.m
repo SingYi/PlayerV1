@@ -54,11 +54,20 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Sing_yi"];
     _httpModel = [HttpModel new];
     _httpModel.delegate = self;
+    [_httpModel QueryClass];
     
 }
 
+
+#pragma mark - httpdelegate
 - (void)HttpMdel:(HttpModel *)httpModel ReturnData:(NSData *)data {
-    NSLog(@"1");
+    id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        
+        _courseArray = obj[@"results"];
+        [self.tableView reloadData];
+        NSLog(@"%ld",_courseArray.count);
+    });
 }
 
 
@@ -70,14 +79,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.courseArray.count;
+    return _courseArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Sing_yi" forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.courseArray[indexPath.row] lastPathComponent];
+    cell.textLabel.text = _courseArray[indexPath.row][@"name"];
     cell.textLabel.font = [UIFont boldSystemFontOfSize:16];
     
     return cell;
@@ -105,8 +114,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     PlayViewController *playVc = [PlayViewController new];
-    playVc.title = [self.courseArray[indexPath.row] lastPathComponent];
-    playVc.musciNames = [self.courseArray[indexPath.row] lastPathComponent];
+//    playVc.title = [self.courseArray[indexPath.row] lastPathComponent];
+//    playVc.musciNames = [self.courseArray[indexPath.row] lastPathComponent];
     [self.navigationController pushViewController:playVc animated:YES];
 }
 
@@ -133,13 +142,13 @@
 
 
 #pragma mark - 懒加载
-- (NSMutableArray *)courseArray {
-    if (!_courseArray) {
-        //获取boundle路径下所有的 xx 格式的文件
-        _courseArray = [NSMutableArray arrayWithArray:[[NSBundle mainBundle] pathsForResourcesOfType:@"mp3" inDirectory:nil]];
-    }
-    return _courseArray;
-}
+//- (NSMutableArray *)courseArray {
+//    if (!_courseArray) {
+//        //获取boundle路径下所有的 xx 格式的文件
+//        _courseArray = [NSMutableArray arrayWithArray:[[NSBundle mainBundle] pathsForResourcesOfType:@"mp3" inDirectory:nil]];
+//    }
+//    return _courseArray;
+//}
 
 
 - (UIButton *)headerLabel {
