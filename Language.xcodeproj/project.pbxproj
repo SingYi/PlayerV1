@@ -47,6 +47,8 @@
 		5E9F46521D56FAD50097D794 /* Sound 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F462A1D56FAD50097D794 /* Sound 9.mp3 */; };
 		5E9F46531D56FAD50097D794 /* 分句原文.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F462B1D56FAD50097D794 /* 分句原文.txt */; };
 		5E9F46541D56FAD50097D794 /* 原始音频.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F462C1D56FAD50097D794 /* 原始音频.mp3 */; };
+		5E9F46571D5705700097D794 /* HttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F46561D5705700097D794 /* HttpModel.m */; };
+		5E9F46591D571FC20097D794 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F46581D571FC20097D794 /* 15.png */; };
 		5EAA03A51D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA03A21D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 */; };
 		5EAA03A61D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA03A31D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 */; };
 		5EAA03A71D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA03A41D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 */; };
@@ -101,6 +103,9 @@
 		5E9F462A1D56FAD50097D794 /* Sound 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound 9.mp3"; sourceTree = "<group>"; };
 		5E9F462B1D56FAD50097D794 /* 分句原文.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "分句原文.txt"; sourceTree = "<group>"; };
 		5E9F462C1D56FAD50097D794 /* 原始音频.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "原始音频.mp3"; sourceTree = "<group>"; };
+		5E9F46551D5705700097D794 /* HttpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpModel.h; sourceTree = "<group>"; };
+		5E9F46561D5705700097D794 /* HttpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpModel.m; sourceTree = "<group>"; };
+		5E9F46581D571FC20097D794 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 		5EAA03A21D339564009F38BF /* Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Die Uhren werden eine Stunde vorgestellt - Osternacht mit Sommerzeit.mp3"; sourceTree = "<group>"; };
 		5EAA03A31D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3"; sourceTree = "<group>"; };
 		5EAA03A41D339564009F38BF /* Technologie auf dem Campus - Studierendenausweis war gestern.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Technologie auf dem Campus - Studierendenausweis war gestern.mp3"; sourceTree = "<group>"; };
@@ -259,6 +264,8 @@
 		5EEBDE7F1CFBD592002BA4FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E9F46551D5705700097D794 /* HttpModel.h */,
+				5E9F46561D5705700097D794 /* HttpModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +295,7 @@
 		5EFD404E1CFBECB4002387A6 /* Material */ = {
 			isa = PBXGroup;
 			children = (
+				5E9F46581D571FC20097D794 /* 15.png */,
 				5EFD404F1CFBECE2002387A6 /* 1.jpg */,
 			);
 			path = Material;
@@ -357,6 +365,7 @@
 				5E9F463B1D56FAD50097D794 /* Sound 22.mp3 in Resources */,
 				5E9F46391D56FAD50097D794 /* Sound 20.mp3 in Resources */,
 				5E9F46351D56FAD50097D794 /* Sound 17.mp3 in Resources */,
+				5E9F46591D571FC20097D794 /* 15.png in Resources */,
 				5EAA03A61D339564009F38BF /* Smartphones und Tablets - Touchscreens für Sehbehinderte.mp3 in Resources */,
 				5E9F46401D56FAD50097D794 /* Sound 27.mp3 in Resources */,
 				5E9F46411D56FAD50097D794 /* Sound 28.mp3 in Resources */,
@@ -409,6 +418,7 @@
 				5EEBDE6E1CFBCE74002BA4FB /* ViewController.m in Sources */,
 				5EEBDE6B1CFBCE74002BA4FB /* AppDelegate.m in Sources */,
 				5EFD404C1CFBE02E002387A6 /* MineClassViewController.m in Sources */,
+				5E9F46571D5705700097D794 /* HttpModel.m in Sources */,
 				5EFD40531CFC1C9D002387A6 /* PlayViewController.m in Sources */,
 				5EEBDE681CFBCE74002BA4FB /* main.m in Sources */,
 			);

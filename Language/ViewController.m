@@ -39,8 +39,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self initUserInterface];
-    
-    
 }
 
 - (void)initUserInterface {

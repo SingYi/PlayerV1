@@ -8,8 +8,9 @@
 
 #import "MineClassViewController.h"
 #import "PlayViewController.h"
+#import "HttpModel.h"
 
-@interface MineClassViewController ()
+@interface MineClassViewController ()<HttpDelegate>
 
 //点击下载更多按钮
 @property (nonatomic, strong) UIButton *headerLabel;
@@ -19,6 +20,8 @@
 
 //设置
 @property (nonatomic, strong) UIBarButtonItem *settingBtn;
+
+@property (nonatomic, strong) HttpModel *httpModel;
 
 @end
 
@@ -49,7 +52,13 @@
 
 - (void)initDataSource {
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Sing_yi"];
+    _httpModel = [HttpModel new];
+    _httpModel.delegate = self;
     
+}
+
+- (void)HttpMdel:(HttpModel *)httpModel ReturnData:(NSData *)data {
+    NSLog(@"1");
 }
 
 

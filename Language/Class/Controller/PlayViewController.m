@@ -25,6 +25,7 @@
 
 //音频播放器
 @property (nonatomic,strong) AVAudioPlayer *audioPlayer;
+
 @property (nonatomic,assign) NSInteger currentMusicIdx; //记录下标
 @property (nonatomic,assign) BOOL isPlaying;
 
