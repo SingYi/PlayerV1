@@ -98,7 +98,7 @@
 
 //查询
 - (void)QueryClass {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.leancloud.cn/1.1/classes/_File"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://leancloud.cn:443/1.1/classes/_File?limit=300&&order=-updatedAt&&"]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"2qewcoP52UQbMqQFd5VmL03i-gzGzoHsz" forHTTPHeaderField:@"X-LC-Id"];
     [request setValue:@"394WCmr17Dbmjd8xinOkM4VF" forHTTPHeaderField:@"X-LC-Key"];

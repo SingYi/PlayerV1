@@ -62,7 +62,7 @@
 #pragma mark - httpdelegate
 - (void)HttpMdel:(HttpModel *)httpModel ReturnData:(NSData *)data {
     id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         
         _courseArray = obj[@"results"];
         [self.tableView reloadData];

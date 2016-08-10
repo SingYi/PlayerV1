@@ -30,6 +30,12 @@
 @property (nonatomic,assign) BOOL isPlaying;
 
 
+@property (nonatomic, strong) NSArray<NSNumber *> *timeArray;
+@property (nonatomic, strong) NSArray<NSString *> *SentenceArray;
+
+@property (nonatomic, strong) NSTimer *timer;
+
+@property (nonatomic, strong) UIButton *sureBtn;
 
 
 
@@ -64,11 +70,13 @@
     
     [self.view addSubview:self.next];
     
+    [self.view addSubview:self.sureBtn];
+    
 }
 
 - (void)initDataSource {
-    _currentMusicIdx = 1;
-    [self initializeAudionPlayerWithMusic:[NSString stringWithFormat:@"Sound %ld.mp3",_currentMusicIdx]];
+    _currentMusicIdx = 0;
+    [self initializeAudionPlayerWithMusic:@"原始音频.mp3"];
     self.navigationItem.title = [NSString stringWithFormat:@"第%ld句",_currentMusicIdx];
 }
 
@@ -78,11 +86,6 @@
     if (musecName.length == 0) {
         return;
     }
-    
-    //2.初始化播放器
-    //AVAudioPlayer:不支持在线播放音乐 (URL:file://)
-    
-    //获取path路径,然后根据path路径创建url->根据url创建音频播放器
     
     NSError *error = nil;
     
@@ -100,14 +103,25 @@
         self.audioPlayer.numberOfLoops = -1;
         //4.4 设置播放当前时间
         NSLog(@"%.2f",self.audioPlayer.currentTime);
+        self.audioPlayer.currentTime = 0;
         //4.5 准备播放
         [self.audioPlayer prepareToPlay];
         
         self.audioPlayer.delegate = self;
         
-        //4.6 刷新页面
-//        [self updateUserInterfaceWithMusic:_musciNames[_currentMusicIdx]];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(refeshTime) userInfo:nil repeats:YES];
     }
+}
+
+- (void)refeshTime {
+    if (self.audioPlayer.currentTime >= self.timeArray[_currentMusicIdx + 1].floatValue) {
+        [self.audioPlayer stop];
+        self.audioPlayer.currentTime = self.timeArray[_currentMusicIdx].floatValue;
+    }
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    NSLog(@"%@",keyPath);
 }
 
 - (void)setTitle:(NSString *)courTitle {
@@ -116,31 +130,79 @@
     
 }
 
+#pragma mark - circulation
+//- (void)circulation {
+//    NSInteger test = self.timeArray[_currentMusicIdx + 1].integerValue - self.timeArray[_currentMusicIdx].integerValue;
+//    
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(stopOrPlay) userInfo:nil repeats:NO];
+//    
+//    timer.fireDate = [NSDate distantPast];
+//}
+//
+//- (void)stopOrPlay {
+//    NSLog(@"1");
+//    [self.audioPlayer stop];
+//}
+
 #pragma mark - events
 - (void)clickNext {
-    if (_currentMusicIdx != 38) {
+    if (_currentMusicIdx != self.timeArray.count - 2) {
         _currentMusicIdx++;
     } else {
-        _currentMusicIdx = 1;
+        _currentMusicIdx = 0;
     }
-    [self initializeAudionPlayerWithMusic:[NSString stringWithFormat:@"Sound %ld.mp3",_currentMusicIdx]];
-    if (_isPlaying) {
-        [self.audioPlayer play];
-    }
+    
+    [self.audioPlayer stop];
+    self.audioPlayer.currentTime = self.timeArray[_currentMusicIdx].integerValue;
+    
+    [self.audioPlayer play];
+//    if (_isPlaying) {
+//        [self.audioPlayer play];
+//    }
     self.navigationItem.title = [NSString stringWithFormat:@"第%ld句",_currentMusicIdx];
 }
 
 - (void)clickLast {
-    if (_currentMusicIdx == 1) {
-        _currentMusicIdx = 38;
+    if (_currentMusicIdx == 0) {
+        _currentMusicIdx = self.timeArray.count - 2;
     } else {
         _currentMusicIdx--;
     }
-    [self initializeAudionPlayerWithMusic:[NSString stringWithFormat:@"Sound %ld.mp3",_currentMusicIdx]];
-    if (_isPlaying) {
-        [self.audioPlayer play];
-    }
+    
+    [self.audioPlayer stop];
+    self.audioPlayer.currentTime = self.timeArray[_currentMusicIdx].floatValue;
+    
+    [self.audioPlayer play];
+
+    
+//    if (_isPlaying) {
+//        [self.audioPlayer play];
+//    }
     self.navigationItem.title = [NSString stringWithFormat:@"第%ld句",_currentMusicIdx];
+}
+
+- (void)clickSureBtn {
+    if ([self.textField.text isEqualToString:self.SentenceArray[_currentMusicIdx]]) {
+        [self showAlertWithMessage:@"正确" dismiss:nil];
+    } else {
+        [self showAlertWithMessage:@"错误" dismiss:nil];
+    }
+    
+    
+}
+
+- (void)showAlertWithMessage:(NSString *)message dismiss:(void(^)(void))dismiss{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [alertController dismissViewControllerAnimated:YES completion:^{
+            if (dismiss) {
+                dismiss();
+            }
+        }];
+    });
 }
 
 #pragma mark - response
@@ -158,6 +220,19 @@
         [audioPlayer pause];
     }
     _audioPlayer = audioPlayer;
+}
+
+-(void)fuwenbenLabel:(UILabel *)labell FontNumber:(id)font AndRange:(NSRange)range AndColor:(UIColor *)vaColor
+{
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:labell.text];
+    
+    //设置字号
+    [str addAttribute:NSFontAttributeName value:font range:range];
+    
+    //设置文字颜色
+    [str addAttribute:NSForegroundColorAttributeName value:vaColor range:range];
+    
+    labell.attributedText = str;
 }
 
 
@@ -249,7 +324,46 @@
     }
     return _last;
 }
+- (UIButton *)sureBtn {
+    if (!_sureBtn) {
+        _sureBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        _sureBtn.frame = CGRectMake(0, kSCREEN_HEIGHT * 0.7, kSCREEN_WIDTH, kSCREEN_HEIGHT / 10);
+        [_sureBtn setTitle:@"检查" forState:(UIControlStateNormal)];
+        _sureBtn.titleLabel.textColor = [UIColor whiteColor];
+        _sureBtn.backgroundColor = [UIColor blackColor];
+        [_sureBtn addTarget:self action:@selector(clickSureBtn) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _sureBtn;
+}
 
+- (NSArray *)timeArray {
+    if (!_timeArray) {
+        _timeArray = @[@(0),@(2),@(5),@(7.5),@(12),@(16.3),@(19),@(22),@(27),@(30),@(34),@(38),@(42),@(45),@(46),@(49)];
+    }
+    return _timeArray;
+}
+
+- (NSArray<NSString *> *)SentenceArray {
+    if (!_SentenceArray) {
+        _SentenceArray = @[@"Salzer, Guten Tag.",
+                           @"Jochen Schulz hier,Guten Tag,Frau Salzer.",
+                           @"Ich habe mich schon im Internet darüber informiert,",
+                           @"dass die besten Studenten unserer Universität die Chance haben,im Ausland zu studieren.",
+                           @"Ich möchte gerne wissen unter welchen Bedingungen man einen Platz beantragen darf?",
+                           @"Es gibt diverse Erasmusprogramme für Studierende.",
+                           @"Bewerber müssen folgende Voraussettzungen erfüllen.",
+                           @"Zuerst muss man die Zwischenprüfung schon abgelegt und mindestens die Note zwei erreicht haben",
+                           @"",
+                           @"",
+                           @"",
+                           @"",
+                           @"",
+                           @"",
+                           @"",
+                           @""];
+    }
+    return _SentenceArray;
+}
 
 
 
